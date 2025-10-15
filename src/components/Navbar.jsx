@@ -1,46 +1,68 @@
 import "boxicons/css/boxicons.min.css";
 import { useState } from "react";
 const Navbar = () => {
-
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleMenubar = () => {
-    console.log("menu clicked")
-   setToggleMenu(!toggleMenu)
-  }
+    console.log("menu clicked");
+    setToggleMenu(!toggleMenu);
+  };
 
   return (
-    <header className="flex justify-between p-10 lg:px-20">
-      <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl m-0 ">
+    <header className="flex justify-between  items-center p-10 lg:px-20 ">
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        className="font-semibold text-2xl md:text-3xl lg:text-4xl m-0 "
+      >
+        {" "}
         MCODE
       </h1>
       <nav className="md:flex gap-10 font-semibold  hidden items-center">
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           href="#"
           className="text-base transition-colors  tracking-wider hover:text-gray-300"
         >
           Company
         </a>
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1700"
           href="#"
           className="text-base transition-colors  tracking-wider hover:text-gray-300"
         >
           Features
         </a>
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1900"
           href="#"
           className="text-base transition-colors  tracking-wider hover:text-gray-300"
         >
           Resources
         </a>
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2100"
           href="#"
           className="text-base transition-colors  tracking-wider hover:text-gray-300"
         >
           Docs
         </a>
       </nav>
-      <button className="font-semibold px-6 py-3 hidden md:block bg-[#a7a7a7] rounded-full text-black transition-all duration-500 hover:bg-white cursor-pointer z-50">
+      <button
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2400"
+        className="font-semibold px-6 py-3 hidden md:block bg-[#a7a7a7] rounded-full text-black transition-all duration-500 hover:bg-white cursor-pointer z-50"
+      >
         SIGN UP
       </button>
 
@@ -80,7 +102,7 @@ const Navbar = () => {
             </a>
           </nav>
         </div>
-      ) }
+      )}
     </header>
   );
 };
